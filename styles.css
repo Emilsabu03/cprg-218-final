@@ -1,0 +1,176 @@
+/* RESET + BASE STYLES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #f5f5f2; /* soft beige */
+  color: #2e2e2e;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+/* HEADER */
+header {
+  background-color: #e7f5ec; /* minty green */
+  padding: 2rem 1rem;
+  text-align: center;
+  border-bottom: 2px solid #c4dcc4;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #2f4f2f; /* dark green */
+}
+
+header p {
+  color: #4a644a;
+}
+
+#weather {
+  margin-top: 1rem;
+  color: #2f4f2f;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #2f4f2f; /* dark green */
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #557a55;
+}
+
+/* HERO SECTION */
+.hero {
+  padding: 5rem 2rem;
+  background-color: #d8f3dc; /* soft green */
+  text-align: center;
+  border-radius: 12px;
+  margin: 2rem auto;
+  max-width: 1000px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: #2f4f2f;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  color: #4a644a;
+}
+
+/* BUTTONS */
+button, .btn {
+  background-color: #4caf50;
+  color: #ffffff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover, .btn:hover {
+  background-color: #388e3c;
+}
+
+/* FEATURE SECTIONS */
+.feature {
+  padding: 4rem 2rem;
+  max-width: 1000px;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.25rem;
+  color: #2f4f2f;
+  margin-bottom: 1.5rem;
+}
+
+p {
+  color: #444;
+}
+
+.feature img {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+/* FOOTER */
+footer {
+  background-color: #e7f5ec;
+  padding: 2rem 1rem;
+  text-align: center;
+  font-size: 0.875rem;
+  color: #777;
+  border-top: 2px solid #c4dcc4;
+}
+
+/* FORM ELEMENTS */
+input, textarea, select {
+  width: 100%;
+  max-width: 500px;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+/* LAYOUT HELPERS */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.25rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .feature {
+    padding: 2rem 1rem;
+  }
+
+  .feature img {
+    max-height: 300px;
+  }
+}
