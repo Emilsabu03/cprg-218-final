@@ -37,6 +37,7 @@ header {
   color: #225a5a;
 }
 
+
 #weather {
   margin-top: 1rem;
   text-align: center;
@@ -152,6 +153,203 @@ button:hover {
   margin: 20px auto 0;
 }
 
+/* ACCOMMODATION SECTION */
+.accommodation-section {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.accommodation-section h2 {
+  font-size: 2.4rem;
+  color: #118ab2;
+  margin-bottom: 2rem;
+}
+
+.card.accommodation {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 1.5rem;
+  transition: transform 0.3s ease;
+  text-align: left;
+}
+
+.card.accommodation:hover {
+  transform: translateY(-5px);
+}
+
+.card.accommodation img.room-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.card.accommodation h3 {
+  font-size: 1.5rem;
+  color: #ef476f;
+  margin-bottom: 0.5rem;
+}
+
+.card.accommodation p {
+  margin-bottom: 1rem;
+  color: #444;
+  font-size: 1rem;
+}
+
+.card.accommodation .amenities {
+  margin-top: 1rem;
+}
+
+
+/* Dining Section */
+.section {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 2.5rem;
+  color: #118ab2;
+  margin-bottom: 2rem;
+}
+
+
+/* Grid Layout for Dining Cards */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+}
+
+/* Dining Cards */
+.card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.card h3 {
+  font-size: 1.8rem;
+  color: #118ab2;
+  margin-bottom: 0.8rem;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+/* SPA SECTION */
+/* Main Spa Section Styling */
+
+main {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+  background-color: #fafafa;
+}
+
+.section {
+  max-width: 900px;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.section h2 {
+  margin-top: 40px;
+  font-size: 1.8rem;
+  color: #00796b;
+  border-bottom: 2px solid #e0f2f1;
+  padding-bottom: 10px;
+}
+
+.spa-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.spa-list li {
+  margin-bottom: 15px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.spa-list span {
+  color: #555;
+  display: block;
+  margin-top: 4px;
+  font-size: 0.95rem;
+}
+
+.spa-notes {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #666;
+  margin-top: 20px;
+}
+
+
+/* Optional Button */
+.spa-card .btn {
+  margin-top: 1rem;
+}
+
+
+/* Image Styling inside Cards */
+.activity-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+
+/* Button Styles */
+.card .btn {
+  background-color: #ef476f;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card .btn:hover {
+  background-color: #d61a4e;
+}
+
+/* Card Hover Effect */
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+
 /* GRID LAYOUT */
 .grid {
   display: grid;
@@ -159,6 +357,8 @@ button:hover {
   gap: 2rem;
   justify-content: center;
 }
+
+
 
 /* TESTIMONIALS */
 .testimonials blockquote {
