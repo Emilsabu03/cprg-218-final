@@ -1,3 +1,4 @@
+/* RESET + BASE STYLES */
 * {
   margin: 0;
   padding: 0;
@@ -6,36 +7,41 @@
 
 body {
   font-family: 'Helvetica Neue', sans-serif;
-  background-color: #fffdf7; 
+  background-color: #fffdf7;
   color: #2e2e2e;
   line-height: 1.6;
   font-size: 16px;
 }
 
+/* HEADER */
 header {
-  background: linear-gradient(to right, #ffd166, #06d6a0); 
+  background: linear-gradient(to right, #ffd166, #06d6a0);
   padding: 2rem 1rem;
-  text-align: center;
   border-bottom: 4px solid #118ab2;
-  color: #1b2e2e;
+  text-align: center; /* Centers the content within the header */
 }
 
-header h1 {
-  font-size: 2.8rem;
+.logo {
+  max-width: 100px;
+  height: auto;
+  margin: 0 auto; /* Centers the logo horizontally */
+}
+
+.header-text h1 {
+  font-size: 2.5rem;
   color: #073b4c;
 }
 
-header p {
-  color: #225a5a;
+.header-text p {
   font-size: 1.1rem;
-  margin-bottom: 0.5rem;
+  color: #225a5a;
 }
 
 #weather {
   margin-top: 1rem;
-  color: #073b4c;
+  text-align: center;
   font-weight: 600;
-  font-size: 1rem;
+  color: #073b4c;
 }
 
 /* NAVIGATION */
@@ -44,14 +50,14 @@ nav {
   justify-content: center;
   flex-wrap: wrap;
   gap: 1.5rem;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 
 nav a {
   text-decoration: none;
   color: #073b4c;
   background-color: #ffd166;
-  padding: 0.4rem 1rem;
+  padding: 0.5rem 1rem;
   border-radius: 20px;
   font-weight: 600;
   transition: background-color 0.3s ease, color 0.3s ease;
@@ -59,7 +65,7 @@ nav a {
 
 nav a:hover {
   background-color: #06d6a0;
-  color: #ffffff;
+  color: white;
 }
 
 /* HERO SECTION */
@@ -87,30 +93,21 @@ nav a:hover {
 /* FEATURE SECTIONS */
 .feature {
   padding: 4rem 2rem;
-  max-width: 1000px;
-  margin: 2rem auto;
+  max-width: 1200px;
+  margin: auto;
   text-align: center;
 }
 
-.feature .btn{
-  display: flex;
-  margin-top: 20px;
-}
-
-h2 {
+.feature h2 {
   font-size: 2.4rem;
   color: #118ab2;
-  margin-bottom: 1.5rem;
-}
-
-p {
-  color: #333;
+  margin-bottom: 2rem;
 }
 
 .feature img {
   width: 100%;
   height: auto;
-  max-height: 400px;
+  max-height: 300px;
   object-fit: cover;
   border-radius: 12px;
   margin-bottom: 1rem;
@@ -119,68 +116,40 @@ p {
 
 .feature h3 {
   color: #ef476f;
-  margin-top: 0.5rem;
   font-size: 1.4rem;
-}
-
-/* TESTIMONIALS */
-.testimonials blockquote {
-  background-color: #f9f9f9;
-  padding: 1.5rem;
-  border-left: 5px solid #ffd166;
-  border-radius: 10px;
-  font-style: italic;
-  color: #444;
-  margin-bottom: 1rem;
-}
-
-.testimonials cite {
-  display: block;
   margin-top: 0.5rem;
-  font-weight: bold;
-  color: #073b4c;
 }
 
-/* FOOTER */
-footer {
-  background-color: white;
-  padding: 2rem 1rem;
-  text-align: center;
-  font-size: 0.9rem;
-  border-top: 4px solid #ffd166;
-}
-
-/* FORM ELEMENTS */
-input, textarea, select {
-  width: 100%;
-  max-width: 500px;
-  padding: 0.75rem;
-  border: 2px solid #06d6a0;
-  border-radius: 8px;
+.feature p {
+  color: #333;
   margin-bottom: 1rem;
-  font-size: 1rem;
-  background-color: #fff;
 }
 
 /* BUTTONS */
-button, .btn {
+.btn,
+button {
   background-color: #ef476f;
-  color: #ffffff;
+  color: white;
   padding: 0.75rem 1.5rem;
   border: none;
   border-radius: 8px;
   font-size: 1rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
-}
-.accommodation .btn {
-  display: flex;
-  margin-top: 20px;
-  
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
 }
 
-button:hover, .btn:hover {
+.btn:hover,
+button:hover {
   background-color: #d61a4e;
+}
+
+/* ACCOMMODATION BUTTON ALIGNMENT */
+.accommodation .btn {
+  display: block;
+  margin: 20px auto 0;
 }
 
 /* GRID LAYOUT */
@@ -189,6 +158,45 @@ button:hover, .btn:hover {
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
   justify-content: center;
+}
+
+/* TESTIMONIALS */
+.testimonials blockquote {
+  background-color: #f9f9f9;
+  padding: 1.5rem 2rem;
+  border-left: 5px solid #ffd166;
+  border-radius: 10px;
+  font-style: italic;
+  color: #444;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.testimonials cite {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #073b4c;
+  text-align: right;
+}
+
+/* AMENITIES LIST */
+.amenities {
+  list-style-type: disc;
+  padding-left: 1.2rem;
+  margin: 1rem 0;
+  text-align: left;
+  color: #444;
+}
+
+/* FOOTER */
+footer {
+  background-color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+  border-top: 4px solid #ffd166;
+  margin-top: 4rem;
 }
 
 /* RESPONSIVE */
@@ -206,6 +214,14 @@ button:hover, .btn:hover {
   }
 
   .feature img {
-    max-height: 280px;
+    max-height: 250px;
+  }
+
+  .header-top {
+    flex-direction: column;
+  }
+
+  .header-text h1 {
+    font-size: 2rem;
   }
 }
