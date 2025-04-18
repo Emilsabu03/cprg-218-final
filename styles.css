@@ -339,7 +339,6 @@ main {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
-
 /* Layout for grids */
 .grid {
   display: grid;
@@ -347,8 +346,6 @@ main {
   gap: 2rem;
   justify-content: center;
 }
-
-
 
 /* Testimonial section*/
 .testimonials blockquote {
@@ -413,5 +410,22 @@ footer {
 
   .header-text h1 {
     font-size: 2rem;
+  }
+
+  nav a {
+    font-size: 0.85rem;
+    padding: 8px 10px;
+  }
+
+  .section h2 {
+    font-size: 1.4rem;
+  }
+
+  .card h3 {
+    font-size: 1.1rem;
+  }
+
+  .card p {
+    font-size: 0.95rem;
   }
 }
